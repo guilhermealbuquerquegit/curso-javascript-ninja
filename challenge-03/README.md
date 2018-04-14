@@ -49,8 +49,11 @@ booleano que representa "verdadeiro";
 */
 
 pessoa.andar = function (qntdMetros) {
-  
-};
+  pessoa.caminhouQuantosMetros = pessoa.caminhouQuantosMetros + qntdMetros;
+  if(pessoa.caminhouQuantosMetros !== 0) {
+      pessoa.andando = true;
+  }
+ };
 
 /*
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
